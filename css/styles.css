@@ -114,8 +114,14 @@ main {
     text-align: center;
     margin-bottom: 5px;
 }
-.news-container h1.animate__pulse {
+/* .news-container h1.animate__pulse {
     animation-delay: 1s;
+    animation-iteration-count: 2;
+} */
+
+.news-container h1.animate__hinge{
+    animation-delay: 1s;
+    animation-duration: 10s;
     animation-iteration-count: 2;
 }
 
