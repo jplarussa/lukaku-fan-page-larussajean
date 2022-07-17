@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cargamos las fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Establezco el favicon -->
+    <link rel="shortcut icon" href="../resources/favicon.ico">
+    <!-- Link a nuestro archivo Css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto | Sitio no oficial del Jugador X</title>
+</head>
+<body>
+    <!-- Inicio del Header -->
+    <header>
+        <nav class="header__nav">
+            <!-- Logo superior -->
+            <a href="../index.html"><img class="logo" src="../resources/logo-blanco.png" alt="Lukaku Logo"></a>
+            <!-- Barra de navegacion -->
+            <ul class="header__list">
+                <li class="header__item"><a href="../index.html">Inicio</a></li>
+                <li class="header__item"><a href="noticias.html">Noticias</a></li>
+                <li class="header__item"><a href="sobre-mi.html">Sobre Mi</a></li>
+                <li class="header__item"><a href="galeria.html">Galeria</a></li>
+                <li class="header__item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contacto">
+        <section class="contacto__contenedor">
+            <img src="../resources/lukaku10.jpg" alt="Contactame">
+            <article class="contacto__box">
+                <h1>CONTACTO</h1>
+                <form action="#" class="contacto__form">
+                    <div>
+                        <label for="name">¿Cuál es tu Nombre y Apellido?</label>
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="aaa@gmail.com" name="email">
+                    </div>
+                    <div>
+                    <p>Que género sos?</p>
+                    <select name="sexo" id="sexo"> 
+                    <option value="x">Hombre</option>
+                    <option value="y">Mujer</option>
+                    <option value="z">Otro</option>
+                    </select>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="acepta" value="1"> Queres recibir más info de Lukaku?
+                    </div>
+                    <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <!-- Inicio del Pie de pagina -->
+    <footer>
+        <a href="../index.html"><img class="logo" src="../resources/logo-blanco.png" alt="Lukaku Logo"></a>
+        <span class="footer__derechos">Disclaimer - Derechos de autor</span>
+        <div class="footer__sociales">
+            <img class="footer__redes" src="../resources/facebook-square-brands.svg">
+            <img class="footer__redes" src="../resources/instagram-brands.svg">
+            <img class="footer__redes" src="../resources/tiktok-brands.svg">
+        </div>
+    </footer>
+</body>
+</html>

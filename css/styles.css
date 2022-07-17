@@ -1,0 +1,409 @@
+/*  Reset Inicial */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+ /* Estilos generales básicos  */
+
+header {
+    height: 100%;
+    background-color: #1266AB;
+    font-size: 3.5rem;
+
+}
+body {
+    font-family:  'Bebas Neue', cursive;
+    font-size: 1.5em;
+}
+
+/* Estilos en todas las páginas  */
+
+/*Estilos de Header */
+
+.header__nav { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo {
+    width: 250px;
+    height: 150px;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+.header__item {
+    padding: 0px 10px;
+}
+
+.header__item a {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header__item a::after, .header__item a::before {
+    transition: all 0.5s;
+}
+.header__item a:hover {
+    color: #0c257f;
+}
+.header__item a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #0c257f;
+    height: 2px;
+}
+
+.header__item a:hover:after {
+    width: 100%;
+}
+
+
+ /* Estilos del index  */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* REMOVIDO - FUTURUAS PRUEBAS - .frontpage {
+    margin-bottom: 1px;
+} */
+
+.frontpage__foto {
+    width: 100%;
+    height: auto;
+}
+
+/* Contenedor de Noticias */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    font-family:  'Oswald', sans-serif;
+    gap: 15px;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+.news-container h1 {
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.news-container h1.animate__pulse {
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+
+/* Contenedor de Foto y Noticia (pagina noticias)  */
+.news-item {
+    display: flex;
+    gap: 15px;
+}
+
+.news-item__img {
+    width: 50%;
+    height: auto;
+
+}
+.news-item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    width: 50%;
+}
+.news-item__info p {
+    text-align: justify;
+}
+/* MODIFICADORES de contenedor Noticias para le index (mas chicos) */
+.news-item__img--portada {
+    width: 240px;
+    height: 160px;
+}
+
+.news-item__info--portada h2 {
+    color: #1266AB;
+    font-style: italic;
+    text-decoration: underline;
+}
+.news-item__info--portada p {
+    text-align: justify;
+    margin-bottom: 2px;
+}
+
+/* Sobre mi  */
+.container-sobremi {
+    display: flex;
+    gap: 15px;
+}
+.sobre-mi {
+    height: auto;
+    font-size: 1.6em;
+    padding: 12px;
+}
+.sobre-mi__titulo {
+    color: #000000;
+}
+.sobre-mi__texto {
+    color: #1266AB;
+    text-align: justify;
+}
+.redes {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* Galeria de imagenes */
+
+.titulo-galeria {   
+    text-align: center;
+    margin: 5px;
+    }
+
+/* Contenedor de galeria */
+.container{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'card1     .'
+                         'card1 card2'
+                         'card3 card2'
+                         'card3 card4'
+                         'card5 card4'
+                         'card5 card6'
+                         '.     card6';
+    gap: 20px;
+    padding: 10px;
+}
+
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+}
+.card3 {
+    grid-area: card3;
+}
+.card4 {
+    grid-area: card4;
+}
+.card5 {
+    grid-area: card5;
+}
+.card6 {
+    grid-area: card6;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 15px;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    opacity: 0.95;
+    border-radius: 5px;
+
+}
+.card__img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    border: #1266AB 4px solid;
+}
+
+.card__info{
+    margin: 2px;
+    padding: 4px;
+    text-align: center;
+    line-height: 1.5em;
+}
+.card__info--titulo {
+    color: #1266AB;
+    margin: 2px;
+}
+.card__info p {
+    text-align: justify;
+}
+
+/* Main de pagina de contacto  */
+
+.contacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Contenedor de imagen y formulario */
+.contacto__contenedor { 
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 40%);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+    margin: 30px;
+    height: auto;
+
+}
+
+.contacto__contenedor img {
+    width: 50%;
+    height: 380px;
+    border-radius: 25px;
+}
+/* Caja de Formulario */
+.contacto__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 1.5em;
+}
+/* Formulario */
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: #1266AB;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__redes {
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    filter: invert(100%);
+    
+}
+.footer__derechos {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+}
+
+footer .logo {
+    width: 180px;
+    height: 108px;
+}
+
+/* MEDIA QUERY DE TABLET */
+@media only screen and (min-width:576px) and (max-width:992px) {
+    /* Arreglo el NAV hacia abajo */
+    .header__nav { 
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    /* Centro las imagenes chicas de noticias */
+    .news-item {
+        align-items: center;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer__derechos {
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (min-width:320px) and (max-width:575px) {
+
+    /* Arreglo el NAV hacia abajo para SMARTPHONE */
+    .header__nav { 
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .header__list {
+        flex-direction: column;
+    }
+    .header__item {
+        padding: 5px 0px;
+    }
+
+    /* Cambio a columnas las noticias del index */
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .news-item__img {
+        width: 100%;
+    }
+    .news-item__info {
+        width: 100%;
+    }
+    .news-item__info--portada h2 {
+        text-align: center;
+    }
+    /* Ajusto el grid de galeria */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Modifico Sobre mi a columnas  */
+    .container-sobremi {
+    flex-direction: column;
+    }
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+        /* Contenedor de imagen y formulario */
+    .contacto__contenedor { 
+    flex-direction: column;
+    }
+    .contacto__contenedor img {
+    width: 100%;
+    height: auto;
+    }
+    /* Modifico el footer para SMARTPHONE */
+    footer {
+        flex-direction: column;
+    }
+    .footer__derechos {
+        margin-bottom: 20px;
+    }
+}
