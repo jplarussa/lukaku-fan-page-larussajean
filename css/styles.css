@@ -94,6 +94,17 @@ main {
     height: auto;
 }
 
+/* Botones del Carousel */
+.carousel .carousel-indicators button {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+.carousel .carousel-item {
+    max-height: 630px;
+}
+
 /* Contenedor de Noticias */
 .news-container {
     display: flex;
