@@ -24,29 +24,7 @@ body {
     font-size: 1.5em;
 }
 
-/* Estilos en todas las páginas  */
-
 /*Estilos de Header */
-
-.header__nav { 
-    background-color: #034694;
-}
-
-.logo {
-    width: 250px;
-    height: 150px;
-}
-
-.header__list {
-    list-style: none;
-    display: flex;
-    justify-items: flex-end;
-    align-items: center;
-}
-
-/* .header__item {
-    padding: 0px 10px;
-} */
 
 .header__item a {
     position: relative;
@@ -85,21 +63,21 @@ main {
     flex-wrap: wrap;
 }
 
-
-.frontpage__foto {
-    width: 100%;
-    height: auto;
-}
-
 /* Botones del Carousel */
 .carousel .carousel-indicators button {
-    width: 18px;
-    height: 18px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin: 0 5px;
     border-radius: 100%;
 }
 .carousel .carousel-item {
     max-height: 630px;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
 }
 
 /* Contenedor de Noticias */
@@ -112,7 +90,6 @@ main {
     gap: 15px;
     margin: 10px auto;
     padding: 10px;
-
 }
 
 .news-container h1 {
@@ -129,6 +106,7 @@ main {
 /* Contenedor de Foto y Noticia (pagina noticias)  */
 .news-item {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -193,7 +171,7 @@ main {
     margin: 5px;
     }
 
-/* Contenedor de galeria */
+/* Tarjetas contenedoras de galeria */
 
 .card {
     border-radius: 5px;
@@ -203,21 +181,7 @@ main {
     border: #034694 4px solid;
 }
 
-.card__info{
-    margin: 2px;
-    padding: 4px;
-    text-align: center;
-    line-height: 1.5em;
-}
-.card__info--titulo {
-    color: #034694;
-    margin: 2px;
-}
-.card__info p {
-    text-align: justify;
-}
-
-/* Main de pagina de contacto  */
+/* Pagina de contacto  */
 
 .contacto {
     width: 100%;
@@ -255,13 +219,6 @@ main {
     height: 100%;
     font-size: 1.5em;
 }
-/* Formulario */
-.contacto__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px;
-}
 
 /* FOOTER */
 footer {
@@ -270,6 +227,11 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.logo {
+    width: 250px;
+    height: 150px;
 }
 
 .footer__redes {
