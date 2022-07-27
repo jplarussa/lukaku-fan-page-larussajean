@@ -21,7 +21,7 @@ header {
 }
 body {
     font-family:  'Bebas Neue', cursive;
-    font-size: 1.5em;
+    font-size: 1.6rem;
 }
 
 /*Estilos de Header */
@@ -103,6 +103,43 @@ main {
     animation-iteration-count: 2;
 }
 
+/* SECCION NOTICIAS DEL INDEX */
+
+.card-body h1 {
+    font-size: 3rem;
+}
+
+.grid-margin {
+    margin-bottom: 2rem;
+}
+
+.stretch-card {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.stretch-card .card {
+    width: 100%;
+}
+
+.border-bottom-white {
+    border-bottom: solid 1px #ffffff;
+}
+
+.scale-img {
+    overflow: hidden;
+}
+
+.scale-img img {
+    transform: scale(1);
+    transition: 0.6s ease-in-out;
+}
+
+.scale-img:hover img {
+    transform: scale(1.1);
+}
+
 /* Contenedor de Foto y Noticia (pagina noticias)  */
 .news-item {
     display: flex;
@@ -127,20 +164,35 @@ main {
 }
 /* MODIFICADORES de contenedor Noticias para le index (mas chicos) */
 .news-item__img--portada {
-    width: 240px;
-    height: 160px;
+    max-width: 300px;
+}
+/* Efectos de link Noticias */
+.news-item__info--portada a {
+    color: #ffffff;
+    background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-size: 0px 2px;
+    background-position: 0px 95%;
+    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    background-repeat: no-repeat;
+    padding: 0.1% 0px;
+    text-decoration: none;
 }
 
 .news-item__info--portada h2 {
-    color: #034694;
-    font-style: italic;
-    text-decoration: underline;
+    color: #ffffff;
+}
+.news-item__info--portada a:hover {
+    background-size: 100% 2px;
 }
 .news-item__info--portada p {
     text-align: justify;
-    margin-bottom: 2px;
+    font-family:  'Oswald', sans-serif;
 }
 
+/* Fecha de la noticia */
+.fs-12 {
+    font-size: 0.75rem;
+}
 /* Sobre mi  */
 .container-sobremi {
     display: flex;
@@ -148,7 +200,7 @@ main {
 }
 .sobre-mi {
     height: auto;
-    font-size: 1.6em;
+    font-size: 2rem;
     padding: 12px;
 }
 .sobre-mi__titulo {
@@ -173,11 +225,11 @@ main {
 
 /* Tarjetas contenedoras de galeria */
 
-.card {
+.card-galeria {
     border-radius: 5px;
     border: transparent 4px solid;
 }
-.card:hover {
+.card-galeria:hover {
     border: #034694 4px solid;
 }
 
@@ -237,7 +289,7 @@ footer {
 .footer__redes {
     width: 30px;
     height: 30px;
-    margin: 0 3px;
+    margin: 10px 3px;
     filter: invert(100%);
     
 }
@@ -268,7 +320,7 @@ footer .logo {
         flex-direction: column;
     }
     .footer__derechos {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
 }
@@ -279,6 +331,10 @@ footer .logo {
     }
     .header__item a:hover:after {
         display: none;
+    }
+    
+    footer {
+        font-size: 1.2rem;
     }
 }
 @media only screen and (min-width:320px) and (max-width:575px) {
@@ -332,6 +388,6 @@ footer .logo {
         flex-direction: column;
     }
     .footer__derechos {
-        margin-bottom: 20px;
+        margin-bottom: 6px;
     }
 }

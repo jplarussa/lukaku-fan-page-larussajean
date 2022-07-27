@@ -13,7 +13,7 @@
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Link a nuestro archivo Css -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Inicio | Sitio no oficial del Jugador X</title>
@@ -87,34 +87,49 @@
             </button>
         </div>
         <!-- Segunda seccion: Noticias -->
-        <section class="news-container"> <!-- Contenedor de noticias-->
-            <h1 class="animate__animated animate__pulse">NOTICIAS</h1>
-            <article class="news-item"> <!-- Contenedor de articulo-->
-                <img class="news-item__img--portada" src="resources/lukaku2.jpg" alt="Gol de caebza en Chelsea">
-                <div class="news-item__info--portada"> <!-- Contenedor de Titulo e Info-->
-                    <h2>Tras su paso por Chelsea, Lukaku regresó a Inter</h2>
-                    <p>El delantero belga Romelu Lukaku regresa al Inter de Milán, apenas un año después de haberse marchado al Chelsea, club que ahora lo cede al equipo italiano después de una mala temporada en Stamford Bridge, anunciaron las dos entidades este miércoles.</p>
+        <div class="container-fluid p-3 gx-0">
+            <div class="card bg-dark text-white margin-grid">
+                <div class="card-body">
+                    <h1 class="text-center">ULTIMAS NOTICIAS</h1>
+                    <div class="d-flex pt-3 px-3 pb-4 border-bottom-white row row-cols-2">
+                        <div class="col-sm-8 col-12 pr-3 news-item__info--portada d-flex flex-column pt-3 px-3" >
+                            <h2><a href="pages/noticias.html">Tras su paso por Chelsea, Lukaku regresó a Inter</a></h2>
+                            <div>
+                                <p class="mr-2">El delantero belga Romelu Lukaku regresa al Inter de Milán, apenas un año después de haberse marchado al Chelsea, club que ahora lo cede al equipo italiano después de una mala temporada en Stamford Bridge, anunciaron las dos entidades este miércoles.</p>
+                                <span class="mr-2">03 de Julio de 2022</span>                                    
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 d-flex ps-4 justify-content-center scale-img .news-item__img">
+                            <img src="resources/lukaku2.jpg" alt="thumb" class="img-fluid news-item__img--portada" />
+                        </div>
+                    </div>
+                    <div class="d-flex pt-4 px-3 pb-4 border-bottom-white row row-cols-2">
+                        <div class="col-sm-8 col-12 pr-3 news-item__info--portada">
+                            <h2><a href="pages/noticias.html">Lukaku explotó contra el Chelsea y ahora quiere volver al Inter</a></h2>
+                            <div>
+                                <p class="mr-2">Hace apenas cuatro meses, el Chelsea, actual campeón de la Champions League, pagaba 115 millones de euros por Romelu Lukaku, quien era un viejo conocido de la casa ya que había hecho inferiores en el elenco británico y venía de romperla toda en el Inter...</p>
+                                <span class="mr-2">29 de Junio de 2022</span>                                    
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 d-flex ps-4 justify-content-center scale-img .news-item__img"> 
+                            <img src="resources/lukaku4.jpg" alt="thumb" class="img-fluid news-item__img--portada" />
+                        </div>
+                    </div>
+                    <div class="d-flex pt-4 px-3 pb-4 row row-cols-2">
+                        <div class="col-sm-8 col-12 pr-3 news-item__info--portada">
+                            <h2><a href="pages/noticias.html">Eden Hazard y Romelu Lukaku: el aviso del DT de Bélgica con miras al Mundial Qatar 2022</a></h2>
+                            <div>
+                                <p class="mr-2">Roberto Martínez, entrenador de Bélgica, insinuó que Eden Hazard y Romelu Lukaku deberían mejorar sus situaciones para llegar en mejor forma al Mundial Qatar 2022.</p>
+                                <span class="mr-2">13 de Junio de 2022</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 d-flex ps-4 justify-content-center scale-img .news-item__img">
+                        <img src="resources/lukaku3.jpg" alt="thumb" class="img-fluid news-item__img--portada" />
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="news-item">
-                <img class="news-item__img--portada" src="resources/lukaku4.jpg" alt="Festejo de gol - Selección Belga">
-                <div class="news-item__info--portada"> 
-                    <h2>Lukaku explotó contra el Chelsea y ahora quiere volver al Inter</h2>
-                    <p>Hace apenas cuatro meses, el Chelsea, actual campeón de la Champions League, pagaba 115 millones de euros por Romelu Lukaku, quien era un viejo conocido de la casa ya que había hecho inferiores en el elenco británico y venía de romperla toda en el Inter de Milan junto a Lautaro Martínez.
-                    Si bien todavía no pasó más de medio año desde la llegada del belga, esta semana el jugador estalló cuando dio una entrevista. Si, el goleador confesó que no se siente a gusto con Thomas Tuchel, su DT, y que sueña con volver a Italia para vestir nuevamente la camiseta neroazzurra.</p>
-                    <p>"Estoy físicamente muy bien. Tras dos años en Italia, trabajando con preparadores y nutricionistas, estoy bien", comenzó diciendo el 9 en una charla con Sky Sports. Lukaku no pudo jugar por más de un mes debido a una lesión en el tobillo y también dio positivo de Covid-19 el 16 de diciembre.
-                    "Sin embargo, no estoy contento con la situación, eso es normal", agregó el belga, que cargó la pistola, apuntó y disparó. "Creo que el míster (Thomas Tuchel) eligió jugar con otro dibujo, yo lo único que puedo hacer es no rendirme y seguir siendo profesional. No estoy contento con la situación, pero soy un trabajador y no voy a tirar la toalla".</p>
-                </div>
-            </article>
-            <article class="news-item">
-                <img class="news-item__img--portada" src="resources/lukaku3.jpg" alt="Festejo de visitante con Chelsea">
-                <div class="news-item__info--portada"> 
-                    <h2>Eden Hazard y Romelu Lukaku: el aviso del DT de Bélgica con miras al Mundial Qatar 2022</h2>
-                    <p>Roberto Martínez, entrenador de Bélgica, insinuó que Eden Hazard y Romelu Lukaku deberían mejorar sus situaciones para llegar en mejor forma al Mundial Qatar 2022.
-                    <p>Eden Hazard y Romelu Lukaku han sido dos de los referentes de la selección de Bélgica en los últimos tiempos. Sin embargo, el centrocampista y el delantero, pensando en el Mundial Qatar 2022 (del 21 de noviembre al 18 de diciembre) han perdido continuidad en Real Madrid y Chelsea, respectivamente.</p>
-                </div>
-            </article>
-        </section>
+            </div>
+        </div>
     </main>
     <!-- Inicio del Pie de pagina -->
     <footer>
