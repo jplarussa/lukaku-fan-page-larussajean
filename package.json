@@ -1,0 +1,25 @@
+{
+  "name": "lukaku-fan-page",
+  "version": "1.0.0",
+  "description": "<h1>Lukaku Fan Page - Por Jean Pierre</h1>\r <p>Este sitio está realizado por un fanático de Romelu Lukaku para homenajearlo y completar el proyecto de un curso de Desarrollo Web de CoderHouse</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jplarussa/lukaku-fan-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jplarussa/lukaku-fan-page/issues"
+  },
+  "homepage": "https://github.com/jplarussa/lukaku-fan-page#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

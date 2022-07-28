@@ -1,42 +1,33 @@
+@charset "UTF-8";
+/* COLORES */
+/* TIPOGRAFIA */
 /*  Reset Inicial */
-
-html{
-	font-size: 62.5%;
-    box-sizing: border-box;
-}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: inherit;
-}
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit; }
 
- /* Estilos generales básicos  */
-
+/* Estilos generales básicos  */
 header {
-    height: 100%;
-    background-color: #034694;
-    font-size: 3rem;
+  height: 100%;
+  background-color: #034694;
+  font-size: 3rem; }
 
-}
 body {
-    font-family:  'Bebas Neue', cursive;
-    font-size: 1.6rem;
-}
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.6rem; }
 
 /*Estilos de Header */
-
 .header__item a {
-    position: relative;
-    text-decoration: none;
-}
-.header__item a::after, .header__item a::before {
-    transition: all 0.5s;
-}
-.header__item a:hover {
-    color: #ffffff;
-}
-.header__item a::after {
+  position: relative;
+  text-decoration: none; }
+  .header__item a::after, .header__item a::before {
+    transition: all 0.5s; }
+  .header__item a::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,348 +37,235 @@ body {
     content: '.';
     color: transparent;
     background: #ffffff;
-    height: 3px;
-}
+    height: 3px; }
+  .header__item a:hover {
+    color: #ffffff; }
+  .header__item a:hover:after {
+    width: 100%; }
 
-.header__item a:hover:after {
-    width: 100%;
-}
-
-
- /* Estilos del index  */
-
+/* Estilos del index  */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 /* Botones del Carousel */
 .carousel .carousel-indicators button {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0 5px;
-    border-radius: 100%;
-}
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 5px;
+  border-radius: 100%; }
+
 .carousel .carousel-item {
-    max-height: 630px;
-}
+  max-height: 630px; }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
-    width: 4rem;
-    height: 4rem;
-}
+  width: 4rem;
+  height: 4rem; }
 
+/* SECCION NOTICIAS DEL INDEX */
+.card-body h1 {
+  font-size: 3rem; }
+
+.grid-margin {
+  margin-bottom: 1rem; }
+
+.border-bottom-white {
+  border-bottom: solid 1px #ffffff; }
+
+.escalar-img {
+  overflow: hidden; }
+  .escalar-img img {
+    transform: scale(1);
+    transition: 0.6s ease-in-out; }
+  .escalar-img:hover img {
+    transform: scale(1.1); }
+
+/* Contenedor de Foto y Noticia (pagina noticias)  */
 /* Contenedor de Noticias */
 .news-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
-    font-family:  'Oswald', sans-serif;
-    gap: 15px;
-    margin: 10px auto;
-    padding: 10px;
-}
-
-.news-container h1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  gap: 15px;
+  margin: 10px auto;
+  padding: 10px; }
+  .news-container h1 {
     color: black;
     font-size: 2.5em;
     text-align: center;
-    margin-bottom: 5px;
-}
-.news-container h1.animate__pulse {
-    animation-delay: 1s;
-    animation-iteration-count: 2;
-}
+    margin-bottom: 5px; }
 
-/* SECCION NOTICIAS DEL INDEX */
-
-.card-body h1 {
-    font-size: 3rem;
-}
-
-.grid-margin {
-    margin-bottom: 2rem;
-}
-
-.stretch-card {
-    display: flex;
-    align-items: stretch;
-    justify-content: stretch;
-}
-
-.stretch-card .card {
-    width: 100%;
-}
-
-.border-bottom-white {
-    border-bottom: solid 1px #ffffff;
-}
-
-.scale-img {
-    overflow: hidden;
-}
-
-.scale-img img {
-    transform: scale(1);
-    transition: 0.6s ease-in-out;
-}
-
-.scale-img:hover img {
-    transform: scale(1.1);
-}
-
-/* Contenedor de Foto y Noticia (pagina noticias)  */
 .news-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.news-item__img {
+  display: flex;
+  align-items: center;
+  gap: 15px; }
+  .news-item__img {
     width: 50%;
     height: auto;
-
-}
-.news-item__info {
+    /* MODIFICADOR imagen noticias del index (mas chicos) */ }
+    .news-item__img--portada {
+      max-width: 300px; }
+  .news-item__info {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.1em;
-    width: 50%;
-}
-.news-item__info p {
-    text-align: justify;
-}
-/* MODIFICADORES de contenedor Noticias para le index (mas chicos) */
-.news-item__img--portada {
-    max-width: 300px;
-}
-/* Efectos de link Noticias */
-.news-item__info--portada a {
-    color: #ffffff;
-    background: linear-gradient(to right, currentColor 0%, currentColor 100%);
-    background-size: 0px 2px;
-    background-position: 0px 95%;
-    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
-    background-repeat: no-repeat;
-    padding: 0.1% 0px;
-    text-decoration: none;
-}
+    width: 50%; }
+    .news-item__info p {
+      text-align: justify; }
+    .news-item__info--portada a {
+      /* Efectos de link Noticias de Index */
+      color: #ffffff;
+      background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+      background-size: 0px 2px;
+      background-position: 0px 95%;
+      transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+      background-repeat: no-repeat;
+      padding: 0.1% 0px;
+      text-decoration: none; }
+      .news-item__info--portada a:hover {
+        background-size: 100% 2px; }
+    .news-item__info--portada h2 {
+      color: #ffffff; }
+    .news-item__info--portada p {
+      text-align: justify;
+      font-family: "Oswald", sans-serif; }
 
-.news-item__info--portada h2 {
-    color: #ffffff;
-}
-.news-item__info--portada a:hover {
-    background-size: 100% 2px;
-}
-.news-item__info--portada p {
-    text-align: justify;
-    font-family:  'Oswald', sans-serif;
-}
-
-/* Fecha de la noticia */
-.fs-12 {
-    font-size: 0.75rem;
-}
 /* Sobre mi  */
 .container-sobremi {
-    display: flex;
-    gap: 15px;
-}
+  display: flex;
+  gap: 15px; }
+
 .sobre-mi {
-    height: auto;
-    font-size: 2rem;
-    padding: 12px;
-}
-.sobre-mi__titulo {
-    color: #000000;
-}
-.sobre-mi__texto {
+  height: auto;
+  font-size: 2rem;
+  padding: 12px; }
+  .sobre-mi__titulo {
+    color: #000000; }
+  .sobre-mi__texto {
     color: #034694;
-    text-align: justify;
-}
+    text-align: justify; }
+
 .redes {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
-}
+  width: 100%;
+  height: auto;
+  margin: 15px 0; }
 
 /* Galeria de imagenes */
-
-.titulo-galeria {   
-    text-align: center;
-    margin: 5px;
-    }
+.titulo-galeria {
+  text-align: center;
+  margin: 5px; }
 
 /* Tarjetas contenedoras de galeria */
-
 .card-galeria {
-    border-radius: 5px;
-    border: transparent 4px solid;
-}
-.card-galeria:hover {
-    border: #034694 4px solid;
-}
+  border-radius: 5px;
+  border: transparent 4px solid; }
+  .card-galeria:hover {
+    border: #034694 4px solid; }
 
 /* Pagina de contacto  */
-
 .contacto {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-/* Contenedor de imagen y formulario */
-.contacto__contenedor { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Contenedor de imagen y formulario */
+  /* Caja de Formulario */ }
+  .contacto__contenedor {
     display: flex;
     border-radius: 25px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 40%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     align-items: center;
     justify-content: space-between;
     position: relative;
     gap: 10px;
     margin: 30px;
-    height: auto;
-
-}
-
-.contacto__contenedor img {
-    width: 50%;
-    height: 380px;
-    border-radius: 25px;
-}
-/* Caja de Formulario */
-.contacto__box {
+    height: auto; }
+    .contacto__contenedor img {
+      width: 50%;
+      height: 380px;
+      border-radius: 25px; }
+  .contacto__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
-    font-size: 1.5em;
-}
+    font-size: 1.5em; }
 
 /* FOOTER */
 footer {
-    display: flex;
-    background-color: #034694;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 250px;
-    height: 150px;
-}
-
-.footer__redes {
+  display: flex;
+  background-color: #034694;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer .logo {
+    width: 180px;
+    height: 108px; }
+  footer .footer__redes {
     width: 30px;
     height: 30px;
     margin: 10px 3px;
-    filter: invert(100%);
-    
-}
-.footer__derechos {
+    filter: invert(100%); }
+  footer .footer__derechos {
     color: white;
     font-size: 2em;
-    margin: 0 15px;
-}
+    margin: 0 15px; }
 
-footer .logo {
-    width: 180px;
-    height: 108px;
-}
+/* MEDIAQUERIE TABLET Y DESKTOP */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  /* Centro las imagenes chicas de noticias */
+  .news-item {
+    align-items: center; }
+  footer {
+    flex-direction: column; }
+    footer .footer__derechos {
+      margin-bottom: 5px; } }
 
-/* MEDIA QUERY DE TABLET */
-@media only screen and (min-width:576px) and (max-width:992px) {
-    /* Arreglo el NAV hacia abajo */
-    .header__nav { 
-        flex-direction: column;
-        padding-bottom: 10px;
-    }
+@media only screen and (max-width: 767px) {
+  /* Ajuste animacion links de nav pantalla intermedia */
+  .header__item a::after {
+    display: none; }
+  .header__item a:hover:after {
+    display: none; }
+  footer {
+    font-size: 1.2rem; } }
 
-    /* Centro las imagenes chicas de noticias */
-    .news-item {
-        align-items: center;
-    }
-    footer {
-        flex-direction: column;
-    }
-    .footer__derechos {
-        margin-bottom: 5px;
-    }
-
-}
-@media only screen and (max-width:767px) {
-    /* Ajuste animacion link nav */
-    .header__item a::after {
-        display: none;
-    }
-    .header__item a:hover:after {
-        display: none;
-    }
-    
-    footer {
-        font-size: 1.2rem;
-    }
-}
-@media only screen and (min-width:320px) and (max-width:575px) {
-
-    /* Arreglo el NAV hacia abajo para SMARTPHONE */
-    .header__nav { 
-        flex-direction: column;
-        padding-bottom: 10px;
-    }
-
-    /* Cambio a columnas las noticias del index */
-    .news-item {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .news-item__img {
-        width: 100%;
-    }
-    .news-item__info {
-        width: 100%;
-    }
-    .news-item__info--portada h2 {
-        text-align: center;
-    }
-    /* Ajusto el grid de galeria */
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    /* Modifico Sobre mi a columnas  */
-    .container-sobremi {
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  /* Cambio a columnas las noticias del index */
+  .news-item {
     flex-direction: column;
-    }
-    .redes {
-        display: flex;
-        justify-content: center;
-    }
-        /* Contenedor de imagen y formulario */
-    .contacto__contenedor { 
-    flex-direction: column;
-    }
-    .contacto__contenedor img {
+    align-items: center;
     width: 100%;
-    height: auto;
-    }
-    /* Modifico el footer para SMARTPHONE */
-    footer {
-        flex-direction: column;
-    }
-    .footer__derechos {
-        margin-bottom: 6px;
-    }
-}
+    margin-bottom: 10px; }
+    .news-item__img {
+      width: 100%; }
+    .news-item__info {
+      width: 100%; }
+      .news-item__info--portada h2 {
+        text-align: center; }
+  /* Modifico Sobre mi a columnas  */
+  .container-sobremi {
+    flex-direction: column; }
+  .redes {
+    display: flex;
+    justify-content: center; }
+  /* Contenedor de imagen y formulario */
+  .contacto__contenedor {
+    flex-direction: column; }
+  .contacto img {
+    width: 100%;
+    height: auto; }
+  /* Modifico el footer para SMARTPHONE */
+  footer {
+    flex-direction: column; }
+    footer .footer__derechos {
+      margin-bottom: 6px; } }
