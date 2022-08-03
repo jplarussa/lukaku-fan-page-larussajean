@@ -21,6 +21,10 @@ body {
   font-family: "Bebas Neue", cursive;
   font-size: 1.6rem; }
 
+h1 {
+  font-weight: bold;
+  font-size: 3rem; }
+
 /*Estilos de Header */
 .header__item a {
   position: relative;
@@ -145,8 +149,6 @@ main {
   height: auto;
   font-size: 2rem;
   padding: 12px; }
-  .sobre-mi__titulo {
-    color: #000000; }
   .sobre-mi__texto {
     color: #034694;
     text-align: justify; }

@@ -26,6 +26,11 @@ body {
     font-size: 1.6rem;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
 /*Estilos de Header */
 
 .header__item {
@@ -209,10 +214,6 @@ main {
     height: auto;
     font-size: 2rem;
     padding: 12px;
-    
-    &__titulo {
-        color: #000000;
-    }
     
     &__texto {
         color: $color-principal;
