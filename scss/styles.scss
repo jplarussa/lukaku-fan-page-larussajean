@@ -1,4 +1,5 @@
 @import "variables";
+@import "operators";
 
 /*  Reset Inicial */
 
@@ -69,8 +70,7 @@ h1 {
  /* Estilos del index  */
 
 main {
-    display: flex;
-    flex-direction: column;
+    @include flexin(flex, column);
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -101,11 +101,6 @@ main {
     font-size: 3rem;
 }
 
-// Margen bloque noticias index
-.grid-margin {
-    margin-bottom: 1rem;
-}
-
 // Borde inferior blanco
 .border-bottom-white {
     border-bottom: solid 1px $color-secundario;
@@ -130,8 +125,7 @@ main {
 
 /* Contenedor de Noticias */
 .news-container {
-    display: flex;
-    flex-direction: column;
+    @include flexin(flex, column);
     align-content: center;
     justify-content: space-between;
     font-family:  $font-secundaria;
@@ -148,7 +142,7 @@ main {
 }
 
 .news-item {
-    display: flex;
+    @include flexin(flex, row);
     align-items: center;
     gap: 15px;
     
@@ -163,8 +157,7 @@ main {
     }
 
     &__info {
-        display: flex;
-        flex-direction: column;
+        @include flexin(flex, column);
         align-items: center;
         font-size: 1.1em;
         width: 50%;
@@ -205,7 +198,7 @@ main {
 
 // Contenedor columnas
 .container-sobremi {
-    display: flex;
+    @include flexin(flex, row);
     gap: 15px;
 }
 
@@ -250,7 +243,7 @@ main {
 
 .contacto {
     width: 100%;
-    display: flex;
+    @include flexin(flex, row);
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -258,11 +251,11 @@ main {
         
     /* Contenedor de imagen y formulario */
     &__contenedor { 
-        display: flex;
-        border-radius: 25px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.40);
+        @include flexin(flex, row);
         align-items: center;
         justify-content: space-between;
+        border-radius: 25px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.40);
         position: relative;
         gap: 10px;
         margin: 30px;
@@ -277,10 +270,9 @@ main {
 
     /* Caja de Formulario */
     &__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexin(flex, column);
         align-items: center;
+        justify-content: center;
         width: 50%;
         height: 100%;
         font-size: 1.5em;
@@ -290,10 +282,10 @@ main {
 
 /* FOOTER */
 footer {
-    display: flex;
-    background-color: $color-principal;
-    justify-content: space-around;
+    @include flexin(flex, row);
     align-items: center;
+    justify-content: space-around;
+    background-color: $color-principal;
     flex-wrap: wrap;
 
     .logo {

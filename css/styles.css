@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* COLORES */
 /* TIPOGRAFIA */
+/* MIXIN PARA  CLASES MODIFICALES */
 /*  Reset Inicial */
 html {
   font-size: 62.5%;
@@ -73,9 +74,6 @@ main {
 .card-body h1 {
   font-size: 3rem; }
 
-.grid-margin {
-  margin-bottom: 1rem; }
-
 .border-bottom-white {
   border-bottom: solid 1px #ffffff; }
 
@@ -106,6 +104,7 @@ main {
 
 .news-item {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 15px; }
   .news-item__img {
@@ -143,6 +142,7 @@ main {
 /* Sobre mi  */
 .container-sobremi {
   display: flex;
+  flex-direction: row;
   gap: 15px; }
 
 .sobre-mi {
@@ -174,6 +174,7 @@ main {
 .contacto {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -181,10 +182,11 @@ main {
   /* Caja de Formulario */ }
   .contacto__contenedor {
     display: flex;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     position: relative;
     gap: 10px;
     margin: 30px;
@@ -196,8 +198,8 @@ main {
   .contacto__box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
     font-size: 1.5em; }
@@ -205,9 +207,10 @@ main {
 /* FOOTER */
 footer {
   display: flex;
-  background-color: #034694;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  background-color: #034694;
   flex-wrap: wrap; }
   footer .logo {
     width: 180px;

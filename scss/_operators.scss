@@ -1,0 +1,7 @@
+/* MIXIN PARA  CLASES MODIFICALES */
+
+// Aplico a flexbox
+@mixin flexin($disp, $f-direction) {
+	display: $disp;
+	flex-direction: $f-direction;
+}
