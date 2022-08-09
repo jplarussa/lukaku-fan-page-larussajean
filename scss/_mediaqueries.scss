@@ -31,6 +31,12 @@
             display: none;
         }
     }
+
+    .biografia {
+        &__info {
+            font-size: 1.23rem;
+        }
+    }
     
     footer {
         font-size: 1.2rem;
@@ -38,8 +44,12 @@
 }
 
 // MEDIA QUERIE PARA PANTALLAS CHICAS - SMARTPHONES
-@media only screen and (min-width:320px) and (max-width:575px) {
+@media only screen and (min-width:319px) and (max-width:575px) {
 
+    .logo-nav {
+        width: 240px;
+        height: 144px;
+    }
     /* Cambio a columnas las noticias del index */
     .news-item {
         flex-direction: column;
@@ -64,6 +74,24 @@
     flex-direction: column;
     }
     
+    .biografia {
+        flex-direction: column;
+
+        &__info {
+            font-size: 1.23rem;
+        }
+        &__img {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+
+    .img-cv {
+        max-height: 300px;
+    }
+
     .redes {
         display: flex;
         justify-content: center;
@@ -86,6 +114,10 @@
         
         .footer {    
             &__derechos {
+                margin-bottom: 6px;
+                font-size: 1.95rem;
+            }
+            &__social {
                 margin-bottom: 6px;
             }
         }

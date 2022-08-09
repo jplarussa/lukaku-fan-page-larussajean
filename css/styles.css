@@ -71,9 +71,6 @@ main {
   height: 4rem; }
 
 /* SECCION NOTICIAS DEL INDEX */
-.card-body h1 {
-  font-size: 3rem; }
-
 .border-bottom-white {
   border-bottom: solid 1px #ffffff; }
 
@@ -95,7 +92,7 @@ main {
   font-family: "Oswald", sans-serif;
   gap: 15px;
   margin: 10px auto;
-  padding: 10px; }
+  padding: 16px; }
   .news-container h1 {
     color: black;
     font-size: 2.5em;
@@ -106,7 +103,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px; }
+  gap: 20px; }
   .news-item__img {
     width: 50%;
     height: auto;
@@ -139,11 +136,46 @@ main {
       text-align: justify;
       font-family: "Oswald", sans-serif; }
 
+.titulares {
+  font-weight: 600; }
+
 /* Sobre mi  */
 .container-sobremi {
   display: flex;
   flex-direction: row;
   gap: 15px; }
+
+.biografia {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: auto;
+  background-color: #034694;
+  transition: 2s;
+  margin-top: 16px; }
+  .biografia__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    max-width: 420px;
+    min-width: 40%;
+    padding: 6px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%); }
+  .biografia__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
+  .biografia__titulo {
+    font-size: 3rem;
+    color: #fff; }
+  .biografia__info {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff; }
 
 .sobre-mi {
   height: auto;
@@ -151,17 +183,21 @@ main {
   padding: 12px; }
   .sobre-mi__texto {
     color: #034694;
-    text-align: justify; }
+    text-align: justify;
+    margin-bottom: 15px; }
 
-.redes {
+.redes-box {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  margin: 15px 0; }
+  margin: 15px 0;
+  align-items: center; }
 
 /* Galeria de imagenes */
 .titulo-galeria {
   text-align: center;
-  margin: 5px; }
+  margin: 7px; }
 
 /* Tarjetas contenedoras de galeria */
 .card-galeria {
@@ -224,6 +260,8 @@ footer {
     color: white;
     font-size: 2em;
     margin: 0 15px; }
+  footer .footer__link {
+    text-decoration: none; }
 
 /* MEDIAQUERIE TABLET Y DESKTOP */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
@@ -241,10 +279,15 @@ footer {
     display: none; }
   .header__item a:hover:after {
     display: none; }
+  .biografia__info {
+    font-size: 1.23rem; }
   footer {
     font-size: 1.2rem; } }
 
-@media only screen and (min-width: 320px) and (max-width: 575px) {
+@media only screen and (min-width: 319px) and (max-width: 575px) {
+  .logo-nav {
+    width: 240px;
+    height: 144px; }
   /* Cambio a columnas las noticias del index */
   .news-item {
     flex-direction: column;
@@ -260,6 +303,17 @@ footer {
   /* Modifico Sobre mi a columnas  */
   .container-sobremi {
     flex-direction: column; }
+  .biografia {
+    flex-direction: column; }
+    .biografia__info {
+      font-size: 1.23rem; }
+    .biografia__img {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%; }
+  .img-cv {
+    max-height: 300px; }
   .redes {
     display: flex;
     justify-content: center; }
@@ -273,4 +327,7 @@ footer {
   footer {
     flex-direction: column; }
     footer .footer__derechos {
+      margin-bottom: 6px;
+      font-size: 1.95rem; }
+    footer .footer__social {
       margin-bottom: 6px; } }

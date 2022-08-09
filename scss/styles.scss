@@ -96,11 +96,6 @@ main {
 
 /* SECCION NOTICIAS DEL INDEX */
 
-// TITULO NOTICIAS INDEX
-.card-body h1 {
-    font-size: 3rem;
-}
-
 // Borde inferior blanco
 .border-bottom-white {
     border-bottom: solid 1px $color-secundario;
@@ -131,7 +126,7 @@ main {
     font-family:  $font-secundaria;
     gap: 15px;
     margin: 10px auto;
-    padding: 10px;
+    padding: 16px;
 
     h1 {
         color: black;
@@ -144,7 +139,7 @@ main {
 .news-item {
     @include flexin(flex, row);
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     
     &__img {
         width: 50%;
@@ -193,6 +188,9 @@ main {
         
     }
 }
+.titulares {
+    font-weight: 600;
+}
 
 /* Sobre mi  */
 
@@ -200,6 +198,44 @@ main {
 .container-sobremi {
     @include flexin(flex, row);
     gap: 15px;
+}
+
+// Barra con foto
+.biografia {
+    @include flexin(flex, row);
+    align-self: center;
+    height: auto;
+    background-color: $color-principal;
+    transition: 2s;
+    margin-top: 16px;
+
+    &__img {
+        @include flexin(flex, row);
+        justify-content: center;
+        height: auto;
+        max-width: 420px;
+        min-width: 40%;
+        padding: 6px;
+        background-color: $color-secundario;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    }
+
+    &__texto {
+        @include flexin(flex, column);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__titulo {
+        font-size: 3rem;
+        color: #fff;
+    }
+    &__info {
+        font-family: $font-secundaria;
+        font-size: 1.6rem;
+        color: $color-secundario;
+    }
 }
 
 // Formato del texto y contenido de sección Sobre mi
@@ -211,21 +247,24 @@ main {
     &__texto {
         color: $color-principal;
         text-align: justify;
+        margin-bottom: 15px;
     }
 }
 
 // Iframe de Instragram - Sobre mi
-.redes {
+.redes-box {
+    @include flexin(flex, column);
     width: 100%;
     height: auto;
     margin: 15px 0;
+    align-items: center;
 }
 
 /* Galeria de imagenes */
 
 .titulo-galeria {   
     text-align: center;
-    margin: 5px;
+    margin: 7px;
     }
 
 /* Tarjetas contenedoras de galeria */
@@ -304,6 +343,9 @@ footer {
             color: white;
             font-size: 2em;
             margin: 0 15px;
+        }
+        &__link {
+            text-decoration: none;
         }
     }
 }
