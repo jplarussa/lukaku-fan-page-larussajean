@@ -1,7 +1,7 @@
 {
-  "name": "lukaku-fan-page",
+  "name": "lukaku-fan-page-larussajean",
   "version": "1.0.0",
-  "description": "Lukaku Fan Page - Por Jean Pierre",
+  "description": "Lukaku Fan Page - Por Jean Pierre La Russa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jplarussa/lukaku-fan-page.git"
+    "url": "git+https://github.com/jplarussa/lukaku-fan-page-larussajean.git"
   },
   "author": "Jean Pierre La Russa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jplarussa/lukaku-fan-page/issues"
+    "url": "https://github.com/jplarussa/lukaku-fan-page-larussajean/issues"
   },
-  "homepage": "https://github.com/jplarussa/lukaku-fan-page#readme",
+  "homepage": "https://github.com/jplarussa/lukaku-fan-page-larussajean#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
