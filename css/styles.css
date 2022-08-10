@@ -222,9 +222,11 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  min-height: 100vh;
+  font-size: 2rem;
   /* Contenedor de imagen */ }
   .contacto img {
-    width: 80%; }
+    width: 100%; }
 
 .caja {
   border-radius: 14px; }
@@ -291,6 +293,9 @@ footer {
     display: none; }
   .biografia__info {
     font-size: 1.23rem; }
+  .contacto img {
+    width: 80%;
+    height: auto; }
   footer {
     font-size: 1.2rem; } }
 
@@ -332,6 +337,7 @@ footer {
     flex-direction: column; }
   .contacto img {
     width: 100%;
+    max-width: 320px;
     height: auto; }
   /* Modifico el footer para SMARTPHONE */
   footer {

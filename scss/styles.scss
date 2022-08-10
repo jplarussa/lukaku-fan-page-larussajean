@@ -283,13 +283,14 @@ main {
 
 .contacto {
     width: 100%;
-    @include flexin(flex, row);
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    min-height: 100vh;
+    font-size: 2rem;
     /* Contenedor de imagen */
     img {
-        width: 80%;
+        width: 100%;
     }
 }
 .caja {

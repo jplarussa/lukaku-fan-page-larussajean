@@ -37,6 +37,12 @@
             font-size: 1.23rem;
         }
     }
+    .contacto {
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
     
     footer {
         font-size: 1.2rem;
@@ -104,6 +110,7 @@
         }
         img {
             width: 100%;
+            max-width: 320px;
             height: auto;
         }
     }
