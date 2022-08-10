@@ -5,3 +5,17 @@
 	display: $disp;
 	flex-direction: $f-direction;
 }
+
+/* MAP para tonos en fondo de elementos*/
+
+$tonos:(
+    dark: #212529,
+    light: #f3f3f3
+);
+
+/* EACH - Por cada tono de fondo */
+@each $name, $color in $tonos {
+    .#{$name} {
+        background-color: #{$color};
+    }
+}

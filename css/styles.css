@@ -2,6 +2,14 @@
 /* COLORES */
 /* TIPOGRAFIA */
 /* MIXIN PARA  CLASES MODIFICALES */
+/* MAP para tonos en fondo de elementos*/
+/* EACH - Por cada tono de fondo */
+.dark {
+  background-color: #212529; }
+
+.light {
+  background-color: #f3f3f3; }
+
 /*  Reset Inicial */
 html {
   font-size: 62.5%;
@@ -136,7 +144,7 @@ main {
       text-align: justify;
       font-family: "Oswald", sans-serif; }
 
-.titulares {
+.titulares, .titulo-galeria {
   font-weight: 600; }
 
 /* Sobre mi  */

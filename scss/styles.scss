@@ -262,7 +262,8 @@ main {
 
 /* Galeria de imagenes */
 
-.titulo-galeria {   
+.titulo-galeria {
+    @extend .titulares;
     text-align: center;
     margin: 7px;
     }
