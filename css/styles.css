@@ -214,31 +214,30 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* Contenedor de imagen y formulario */
-  /* Caja de Formulario */ }
-  .contacto__contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    position: relative;
-    gap: 10px;
-    margin: 30px;
-    height: auto; }
-    .contacto__contenedor img {
-      width: 50%;
-      height: 380px;
-      border-radius: 25px; }
-  .contacto__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    font-size: 1.5em; }
+  /* Contenedor de imagen */ }
+  .contacto img {
+    width: 80%; }
+
+.caja {
+  border-radius: 14px; }
+
+.obligatorio {
+  color: #dd2471; }
+
+.boton-contacto {
+  width: 150px;
+  height: 40px;
+  background-color: #034694;
+  border: 1px solid #034694;
+  border-radius: 14px;
+  outline: none;
+  margin-top: 10px;
+  color: #ffffff;
+  transition: all 0.3s; }
+  .boton-contacto:hover {
+    background-color: #ffffff;
+    color: #034694;
+    width: 155px; }
 
 /* FOOTER */
 footer {
@@ -256,6 +255,9 @@ footer {
     height: 30px;
     margin: 10px 3px;
     filter: invert(100%); }
+    footer .footer__redes:hover {
+      transform: scale(1.18, 1.18);
+      transition: all 0,5ms; }
   footer .footer__derechos {
     color: white;
     font-size: 2em;

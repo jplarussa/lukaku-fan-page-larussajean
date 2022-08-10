@@ -286,38 +286,35 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
-        
-    /* Contenedor de imagen y formulario */
-    &__contenedor { 
-        @include flexin(flex, row);
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 25px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.40);
-        position: relative;
-        gap: 10px;
-        margin: 30px;
-        height: auto;
-
-        img {
-            width: 50%;
-            height: 380px;
-            border-radius: 25px;
-        }
-    }
-
-    /* Caja de Formulario */
-    &__box {
-        @include flexin(flex, column);
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: 100%;
-        font-size: 1.5em;
+    /* Contenedor de imagen */
+    img {
+        width: 80%;
     }
 }
+.caja {
+    border-radius: 14px;
+}
 
+.obligatorio {
+    color: #dd2471;
+}
+.boton-contacto {
+    width: 150px;
+    height: 40px;
+    background-color: $color-principal;
+    border: 1px solid $color-principal;
+    border-radius: 14px;
+    outline: none;
+    margin-top: 10px;
+    color: $color-secundario;
+    transition: all 0.3s; 
+
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-principal;
+        width: 155px;
+    }
+}
 
 /* FOOTER */
 footer {
@@ -338,6 +335,11 @@ footer {
             height: 30px;
             margin: 10px 3px;
             filter: invert(100%);
+
+            &:hover {
+                transform: scale(1.18, 1.18);
+                transition: all 0,5ms;
+            }
         }
         &__derechos {
             color: white;
