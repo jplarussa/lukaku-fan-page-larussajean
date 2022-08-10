@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* COLORES */
 /* TIPOGRAFIA */
+/* TAMAÑOS DE TITULOS */
 /* MIXIN PARA  CLASES MODIFICALES */
 /* MAP para tonos en fondo de elementos*/
 /* EACH - Por cada tono de fondo */
@@ -217,8 +218,6 @@ main {
 /* Pagina de contacto  */
 .contacto {
   width: 100%;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -226,10 +225,12 @@ main {
   font-size: 2rem;
   /* Contenedor de imagen */ }
   .contacto img {
-    width: 100%; }
+    width: 100%;
+    max-width: 500px; }
 
 .caja {
-  border-radius: 14px; }
+  border-radius: 14px;
+  font-size: 2rem; }
 
 .obligatorio {
   color: #dd2471; }
@@ -293,9 +294,9 @@ footer {
     display: none; }
   .biografia__info {
     font-size: 1.23rem; }
+  /* Contenedor de imagen y formulario */
   .contacto img {
-    width: 80%;
-    height: auto; }
+    max-width: 380px; }
   footer {
     font-size: 1.2rem; } }
 
@@ -337,7 +338,7 @@ footer {
     flex-direction: column; }
   .contacto img {
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     height: auto; }
   /* Modifico el footer para SMARTPHONE */
   footer {

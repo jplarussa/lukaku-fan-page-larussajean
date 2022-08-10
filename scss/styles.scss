@@ -19,7 +19,7 @@ html{
 header {
     height: 100%;
     background-color: $color-principal;
-    font-size: 3rem;
+    font-size: $titulo-primario;
 
 }
 body {
@@ -29,7 +29,7 @@ body {
 
 h1 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: $titulo-primario;
 }
 
 /*Estilos de Header */
@@ -228,7 +228,7 @@ main {
     }
 
     &__titulo {
-        font-size: 3rem;
+        font-size: $titulo-primario;
         color: #fff;
     }
     &__info {
@@ -241,7 +241,7 @@ main {
 // Formato del texto y contenido de sección Sobre mi
 .sobre-mi {
     height: auto;
-    font-size: 2rem;
+    font-size: $titulo-secundario;
     padding: 12px;
     
     &__texto {
@@ -287,14 +287,16 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     min-height: 100vh;
-    font-size: 2rem;
+    font-size: $titulo-secundario;
     /* Contenedor de imagen */
     img {
         width: 100%;
+        max-width: 500px;
     }
 }
 .caja {
     border-radius: 14px;
+    font-size: $titulo-secundario;
 }
 
 .obligatorio {

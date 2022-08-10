@@ -37,13 +37,14 @@
             font-size: 1.23rem;
         }
     }
+    
+    /* Contenedor de imagen y formulario */
     .contacto {
         img {
-            width: 80%;
-            height: auto;
+            max-width: 380px;
         }
     }
-    
+
     footer {
         font-size: 1.2rem;
     }
@@ -110,7 +111,7 @@
         }
         img {
             width: 100%;
-            max-width: 320px;
+            max-width: 300px;
             height: auto;
         }
     }
