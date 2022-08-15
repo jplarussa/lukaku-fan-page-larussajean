@@ -138,7 +138,7 @@ main {
 
 .news-item {
     @include flexin(flex, row);
-    align-items: center;
+    align-items: start;
     gap: 20px;
     
     &__img {
@@ -242,12 +242,14 @@ main {
 .sobre-mi {
     height: auto;
     font-size: $titulo-secundario;
-    padding: 12px;
+    padding: 35px;
     
     &__texto {
         color: $color-principal;
+        font-family: $font-secundaria;
         text-align: justify;
         margin-bottom: 15px;
+        padding: 0px 6px;
     }
 }
 
@@ -258,6 +260,7 @@ main {
     height: auto;
     margin: 15px 0;
     align-items: center;
+    padding: 6px;
 }
 
 /* Galeria de imagenes */
@@ -294,6 +297,8 @@ main {
         max-width: 500px;
     }
 }
+
+/* Visual de los inputs de contacto */
 .caja {
     border-radius: 14px;
     font-size: $titulo-secundario;
@@ -302,6 +307,7 @@ main {
 .obligatorio {
     color: #dd2471;
 }
+
 .boton-contacto {
     width: 150px;
     height: 40px;
@@ -316,7 +322,7 @@ main {
     &:hover {
         background-color: $color-secundario;
         color: $color-principal;
-        width: 155px;
+        flex-grow: 1.1;
     }
 }
 

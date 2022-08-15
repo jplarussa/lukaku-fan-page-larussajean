@@ -3,10 +3,6 @@
 /* MEDIAQUERIE TABLET Y DESKTOP */
 @media only screen and (min-width:576px) and (max-width:992px) {
 
-    /* Centro las imagenes chicas de noticias */
-    .news-item {
-        align-items: center;
-    }
 
     footer {
         flex-direction: column;
@@ -60,7 +56,6 @@
     /* Cambio a columnas las noticias del index */
     .news-item {
         flex-direction: column;
-        align-items: center;
         width: 100%;
         margin-bottom: 10px;
 
@@ -94,14 +89,14 @@
             min-width: 100%;
         }
     }
+    .sobre-mi {
+        &__texto {
+            text-align: start;
+        }
+    }
 
     .img-cv {
         max-height: 300px;
-    }
-
-    .redes {
-        display: flex;
-        justify-content: center;
     }
     
     /* Contenedor de imagen y formulario */

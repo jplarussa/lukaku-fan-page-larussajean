@@ -111,7 +111,7 @@ main {
 .news-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   gap: 20px; }
   .news-item__img {
     width: 50%;
@@ -189,11 +189,13 @@ main {
 .sobre-mi {
   height: auto;
   font-size: 2rem;
-  padding: 12px; }
+  padding: 35px; }
   .sobre-mi__texto {
     color: #034694;
+    font-family: "Oswald", sans-serif;
     text-align: justify;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    padding: 0px 6px; }
 
 .redes-box {
   display: flex;
@@ -201,7 +203,8 @@ main {
   width: 100%;
   height: auto;
   margin: 15px 0;
-  align-items: center; }
+  align-items: center;
+  padding: 6px; }
 
 /* Galeria de imagenes */
 .titulo-galeria {
@@ -228,6 +231,7 @@ main {
     width: 100%;
     max-width: 500px; }
 
+/* Visual de los inputs de contacto */
 .caja {
   border-radius: 14px;
   font-size: 2rem; }
@@ -248,7 +252,7 @@ main {
   .boton-contacto:hover {
     background-color: #ffffff;
     color: #034694;
-    width: 155px; }
+    flex-grow: 1.1; }
 
 /* FOOTER */
 footer {
@@ -278,9 +282,6 @@ footer {
 
 /* MEDIAQUERIE TABLET Y DESKTOP */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
-  /* Centro las imagenes chicas de noticias */
-  .news-item {
-    align-items: center; }
   footer {
     flex-direction: column; }
     footer .footer__derechos {
@@ -307,7 +308,6 @@ footer {
   /* Cambio a columnas las noticias del index */
   .news-item {
     flex-direction: column;
-    align-items: center;
     width: 100%;
     margin-bottom: 10px; }
     .news-item__img {
@@ -328,11 +328,10 @@ footer {
       width: 100%;
       max-width: 100%;
       min-width: 100%; }
+  .sobre-mi__texto {
+    text-align: start; }
   .img-cv {
     max-height: 300px; }
-  .redes {
-    display: flex;
-    justify-content: center; }
   /* Contenedor de imagen y formulario */
   .contacto__contenedor {
     flex-direction: column; }
