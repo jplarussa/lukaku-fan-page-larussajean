@@ -8,3 +8,6 @@
 <li>BOOTSTRAP</li>
 <li>SASS</li>
 </ul>
+
+<h2>Deploy</h2>
+https://jplarussa.github.io/lukaku-fan-page-larussajean
